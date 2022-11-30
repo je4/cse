@@ -1,0 +1,31 @@
+#staticdir = "./web/static"
+templatedir = "./web/template"
+templatedev = true
+user = "ubintern"
+password = "test"
+addr = "localhost:8056"
+addrext = "https://search.basel-collections.ch"
+
+[domain]
+"edoc.unibas.ch" = "edoc"
+"swisscollections.ch" = "swisscollections"
+"mediathek.hgk.fhnw.ch" = "Mediathek Basel"
+
+[google]
+apikey = "AIzaSyDY04SWPSnPiORT8K9LLliXUhGMiIyTaag"
+    [google.searchkeys.baselcollections]
+        key = "40343dea3e4e18cf6"
+        name = "Basel Collections"
+        link = "https://www.basel-collections.ch"
+    [google.searchkeys.musikwissenschaft]
+        key = "e64b4e4bcbdab0eb1"
+        name = "Musikwissenschaft"
+        link = "https://ub.unibas.ch/de/fachgebiete/musikwissenschaft/"
+    [google.searchkeys.kunstgeschichte]
+        key = "4645629aa282a75d8"
+        name = "Kunstgeschichte"
+        link = "https://ub.unibas.ch/de/kunstgeschichte/"
+    [google.searchkeys.openglam]
+        key = "88a8003663748c2f5"
+        name = "GLAM Open Access"
+        link = ""

@@ -9,7 +9,7 @@ import (
 
 type Cfg_Google struct {
 	Apikey           string `toml:"apikey"`
-	CustomSearchKeys map[string]struct {
+	CustomSearchKeys map[string]*struct {
 		Title string
 		Link  string
 		Key   string

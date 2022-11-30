@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"flag"
+	"fmt"
 	"github.com/je4/cse/v2/pkg/server"
 	"github.com/je4/cse/v2/web"
 	lm "github.com/je4/utils/v2/pkg/logger"
@@ -32,11 +33,19 @@ func main() {
 		BaseDir:   *basedir,
 		Addr:      "localhost:80",
 		AddrExt:   "http://localhost:80/",
-		User:      "jane",
-		Password:  "doe",
 	}
 	if err := LoadCSEConfig(*configfile, config); err != nil {
 		log.Printf("cannot load config file: %v", err)
+	}
+	for name, csk := range config.Google.CustomSearchKeys {
+		str := os.Getenv(fmt.Sprintf("%s_key", name))
+		if str != "" {
+			csk.Key = str
+		}
+	}
+	str := os.Getenv("apikey")
+	if str != "" {
+		config.Google.Apikey = str
 	}
 
 	// create logger instance
