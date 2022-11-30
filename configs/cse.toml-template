@@ -1,0 +1,13 @@
+#staticdir = "./web/static"
+#templatedir = "./web/template"
+#templatedev = true
+user = "user"
+password = "password"
+addr = "localhost:89"
+addrext = "https://search.basel-collections.ch"
+
+[google]
+apikey = "XXXXXXX"
+    [google.searchkeys.baselcollections]
+        key = "XXXXXX"
+        name = "Basel Collections"

@@ -1,0 +1,10 @@
+section.main {
+    background-color: #A5D7D2;
+}
+
+.img-thumbnail:hover {
+    position:relative;
+    max-width:150px;
+    max-height:150px;
+    z-index:999;
+}
