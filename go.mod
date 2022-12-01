@@ -1,8 +1,8 @@
-module github.com/je4/cse/v2
+module go.ub.unibas.ch/cse/v2
 
 go 1.18
 
-replace github.com/je4/cse/v2 => ./
+replace go.ub.unibas.ch/cse/v2 => ./
 
 require (
 	github.com/BurntSushi/toml v1.0.0
